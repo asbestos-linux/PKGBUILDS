@@ -12,9 +12,9 @@ Lsb_release() {
         echo "DISTRIB_CODENAME=${quote}rolling${quote}" >> $file
     fi
     sed -i $file \
-        -e "s|^DISTRIB_ID=.*|DISTRIB_ID=${quote}EndeavourOS${quote}|" \
+        -e "s|^DISTRIB_ID=.*|DISTRIB_ID=${quote}AsbestOS${quote}|" \
         -e "s|^DISTRIB_CODENAME=.*|DISTRIB_CODENAME=${quote}rolling${quote}|" \
-        -e "s|^DISTRIB_DESCRIPTION=.*|DISTRIB_DESCRIPTION=${quote}EndeavourOS Linux${quote}|" \
+        -e "s|^DISTRIB_DESCRIPTION=.*|DISTRIB_DESCRIPTION=${quote}AsbestOS${quote}|" \
         -e "s|^DISTRIB_RELEASE=\"\(.*\)\"|DISTRIB_RELEASE=${quote}\1${quote}|"
 }
 
@@ -28,21 +28,21 @@ Os_release() {
     fi
 
     # Get URLs from the EndeavourOS web site!
-    local home=https://endeavouros.com
-    local doc=https://discovery.endeavouros.com
+    local home=https://assyt.fi/
+    local doc=https://wiki.archlinux.org/
     local support=https://forum.endeavouros.com
     local bugs=https://forum.endeavouros.com/c/general-system/endeavouros-installation
     local privacy=https://endeavouros.com/privacy-policy-2
 
     sed -i $file \
-        -e "s|^NAME=.*|NAME=${quote}EndeavourOS${quote}|" \
-        -e "s|^PRETTY_NAME=.*|PRETTY_NAME=${quote}EndeavourOS${quote}|" \
+        -e "s|^NAME=.*|NAME=${quote}AsbestOS${quote}|" \
+        -e "s|^PRETTY_NAME=.*|PRETTY_NAME=${quote}AsbestOS${quote}|" \
         -e "s|^HOME_URL=.*|HOME_URL=${quote}$home${quote}|" \
         -e "s|^DOCUMENTATION_URL=.*|DOCUMENTATION_URL=${quote}$doc${quote}|" \
         -e "s|^SUPPORT_URL=.*|SUPPORT_URL=${quote}$support${quote}|" \
         -e "s|^BUG_REPORT_URL=.*|BUG_REPORT_URL=${quote}$bugs${quote}|" \
-        -e "s|^LOGO=.*|LOGO=${quote}endeavouros${quote}|" \
-        -e "s|^ID=.*|ID=${quote}endeavouros${quote}|" \
+        -e "s|^LOGO=.*|LOGO=${quote}asbestos${quote}|" \
+        -e "s|^ID=.*|ID=${quote}asbestos${quote}|" \
         -e "s|^ID_LIKE=.*|ID_LIKE=${quote}arch${quote}|" \
         -e "s|^PRIVACY_POLICY_URL=.*|PRIVACY_POLICY_URL=${quote}$privacy${quote}|" \
         -e "s|^ANSI_COLOR=\"\(.*\)\"|ANSI_COLOR=${quote}\1${quote}|"

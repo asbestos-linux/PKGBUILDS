@@ -1,13 +1,14 @@
 # Maintainer: EndeavourOS-Team <info@endeavouros.com>
+# Maintainer: Hassunaama / Hassy Team™ <asbestos@assyt.fi>
 
 pkgname=eos-hooks
 pkgver=1.16.2
 pkgrel=1
-pkgdesc='EndeavourOS pacman hooks'
+pkgdesc='AsbestOS pacman hooks'
 arch=('any')
 license=('GPL3')
-url=https://github.com/endeavouros-team/PKGBUILDS/tree/master/$pkgname
-_url=https://raw.githubusercontent.com/endeavouros-team/PKGBUILDS/master/$pkgname
+url=https://github.com/asbestos-linux/PKGBUILDS/tree/master/$pkgname
+_url=https://raw.githubusercontent.com/asbestos-linux/PKGBUILDS/master/$pkgname
 
 depends=()
 
